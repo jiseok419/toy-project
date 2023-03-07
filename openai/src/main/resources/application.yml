@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: root
+    password: Ajiseok!3676
+    url: jdbc:mysql://localhost:3306/openai
+  profiles:
+    include: API-KEY
+
+server:
+  port: 8081
