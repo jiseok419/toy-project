@@ -10,7 +10,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -38,7 +37,6 @@ public class ChatGptService {
     }
 
     public ChatGptResponseDto askQuestion(QuestionRequestDto requestDto) {
-        log.info("{}", requestDto.getQuestion());
         return this.getResponse(
                 this.buildHttpEntity(
                         new ChatGptRequestDto(

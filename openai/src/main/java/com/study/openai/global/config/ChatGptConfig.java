@@ -3,7 +3,7 @@ package com.study.openai.global.config;
 public class ChatGptConfig {
     public static final String AUTHORIZATION = "Authorization";
     public static final String BEARER = "Bearer ";
-    public static final String API_KEY = "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";
+    public static final String API_KEY = "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";
     public static final String MODEL = "text-davinci-003";
     public static final Integer MAX_TOKEN = 300;
     public static final Double TEMPERATURE = 0.0;
